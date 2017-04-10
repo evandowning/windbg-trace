@@ -1,0 +1,4 @@
+!logexts.loge
+!logexts.logc e *
+!logexts.logo e tv
+!logexts.logb f
