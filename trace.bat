@@ -6,7 +6,7 @@ set argC=0
 for %%x in (%*) do Set /A argC+=1
 
 ::echo %argC%
-::echo %1
+::echo %~1
 
 :: Check if appropriate number of arguments
 if not %argC%==1 (
@@ -14,4 +14,4 @@ if not %argC%==1 (
     goto:eof
 )
 
-start "" "C:\Program Files\Windows Kits\8.1\Debuggers\x86\windbg.exe" -y "SRV*downstream_store*http://msdl.microsoft.com/download/symbols" -c "$$><script.txt;g;q" %1
+start "" "C:\Program Files\Windows Kits\8.1\Debuggers\x86\windbg.exe" -y "SRV*downstream_store*http://msdl.microsoft.com/download/symbols" -c "$$><script.txt;g;q" %~1
