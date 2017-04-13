@@ -1,4 +1,4 @@
-# Windows-API-Trace
+# WinDBG-Trace
 These scripts enable a user to trace the Windows API calls of any Portable
 Executable file.
 
